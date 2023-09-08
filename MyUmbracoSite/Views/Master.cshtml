@@ -1,0 +1,121 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="he">
+<head>
+
+    @await Html.PartialAsync("~/Views/Partials/metaData.cshtml", Model)
+
+
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" type="text/css" href="media/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="media/css/style.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicons/favicon-16x16.png">
+    <link rel="manifest" href="media/favicons/site.webmanifest">
+    <link rel="mask-icon" href="media/favicons/safari-pinned-tab.svg" color="#003a70">
+    <link rel="shortcut icon" href="media/favicons/favicon.ico">
+
+
+</head>
+
+<body class="loaded">
+
+    <!-- Skip content -->
+    <div class="skiptocontent" id="skiptocontent">
+        <a class="access open_nav" tabindex="1" accesskey="n" href="javascript:;">דלג לתפריט הראשי (מקש קיצור n)</a>
+        <a class="access" tabindex="2" accesskey="s" href="#maincontent">דלג לתוכן הדף (מקש קיצור s)</a>
+        <a class="access" tabindex="3" accesskey="2" href="#mainfooter">דלג לתחתית הדף (מקש קיצור 2)</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header header-light" id="header">
+        <div class="mask"></div>
+        <div class="in">
+            <div class="innerpage">
+                <div class="row">
+
+                    <!-- Logo -->
+                    <a href="#" title="רפאל - בתי חולים" class="logo"></a>
+
+                    <!-- Nav -->
+                    @await Html.PartialAsync("~/Views/Partials/mainNav.cshtml", Model)
+
+                    <!-- Mobile -->
+                    <a href="javascript:;" class="toggleMenu" id="toggleMenu" aria-label="פתח תפריט"><span class="stroke"><span class="middle"></span></span></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+         <!-- Mobile nav -->
+         @await Html.PartialAsync("~/Views/Partials/mobileNav.cshtml", Model)
+
+
+    <!-- Sticky elements -->
+    <div class="sticky_elem" id="sticky_elem">
+        <ul class="share_sticky">
+            <li><a href="#" aria-label="WhatsApp"><span class="icon icon-whatsapp"></span></a></li>
+            <li><a href="#" aria-label="Facebook"><span class="icon icon-facebook_square"></span></a></li>
+            <li class="li-print"><a href="window.print();" aria-label="הדפס מאמר"><span class="icon icon-print"></span></a></li>
+        </ul>
+    </div>
+    <!-- Container -->
+    <div class="container-scroll" id="container-scroll">
+        <main class="container" id="container" role="main">
+
+            <!-- Page top -->
+            <div id="page-top"></div>
+            
+            @RenderBody();
+            
+            <!-- Main footer -->
+            <a href="javascript:;" id="mainfooter" tabindex="-1" class="skip_content_link"></a>
+
+            <!-- Footer -->
+             @await Html.PartialAsync("~/Views/Partials/footer.cshtml", Model)
+
+
+        </main>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <!-- Popup wcag -->
+        <div class="popup_wcag content_popup box">
+            <a href="javascript:;" title="סגור" class="close_btn close close_lightbox" role="button"><span class="icon icon-close"></span></a>
+            <div class="scrollbar-inner">
+                <div class="inner">
+                    <div class="text">
+                        <h3 class="title_section">הצהרת נגישות</h3>
+                        <div class="text">
+                            <p><strong>גולש/ת יקר/ה!</strong></p>
+                            <p>ברוך הבא לאתר התוכן של רפאל בע"מ (להלן <strong>"החברה" </strong>או<strong> "רפאל"</strong>). אתר זה מיועד להנגיש בפניך את שירותי, אתרי ותכני החברה השונים, ולרכז עבורך את כל המידע הדרוש לשם העשרת תרבות האוכל, הבישול והפנאי, אספקת מוצרים ומתכונים, ומגוון טיפים והמלצות בנוגע לבישול, אפיה ותזונה.</p>
+                            <p>** מסמך זה מנוסח בלשון זכר מטעמי נוחות בלבד אך מתייחס לגברים ונשים כאחד. עמכן הסליחה.</p>
+                            <p>&nbsp;</p>
+                            <h3>שימושך באתר והסכמה לתנאיו ולתקנונים קשורים/נלווים</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script> var includeScriptsUrlPath = 'media/js/plugins/'; </script>
+    <script src="media/js/plugins/plugins.min.js"></script>
+    <script src="media/js/plugins/mixel.plugins.js"></script>
+    <script src="media/js/global.js"></script>
+
+</body>
+</html>
+
