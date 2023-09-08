@@ -40,9 +40,7 @@ To access the Umbraco admin dashboard, please follow these steps:
 
 1. Open your web browser.
 
-2. Navigate to the admin dashboard URL below:
-
-   <a href="http://gyasinimako-001-site1.htempurl.com/umbraco">http://gyasinimako-001-site1.htempurl.com/umbraco<a>
+2. Navigate to the admin dashboard URL below: http://gyasinimako-001-site1.htempurl.com/umbraco
 
 3. Log in using the following credentials:
 
@@ -53,10 +51,10 @@ You should now have access to the Umbraco admin dashboard.
 
 ## Credentials
 
-- **Hosted Website URL**:    <a href="http://gyasinimako-001-site1.htempurl.com">http://gyasinimako-001-site1.htempurl.com<a>
+- **Hosted Website URL**:    http://gyasinimako-001-site1.htempurl.com
 
 
-- **Admin Dashboard URL**:    <a href="http://gyasinimako-001-site1.htempurl.com/umbraco">http://gyasinimako-001-site1.htempurl.com/umbraco<a>
+- **Admin Dashboard URL**:    http://gyasinimako-001-site1.htempurl.com/umbraco
 
 
 - **Admin Email**: admin@example.com
