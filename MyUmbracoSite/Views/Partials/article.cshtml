@@ -1,6 +1,5 @@
-
-@inherits UmbracoViewPage
-             <!-- Home page -->
+@inherits UmbracoViewPage<IHeaderProperties>
+<!-- Home page -->
             <div class="medicalcenter_page template_container container_padding" id="medicalcenter_page" data-templatename="medical_center">
 
                 <!-- Main content -->
@@ -14,17 +13,17 @@
                             <div class="page_top">
                                 <img src="media/images/logo_dark.png" alt="רפאל" class="logo_print" />
                                 <a href="#" class="go_back "><span class="icon icon-arrow_right"></span><span class="label">הריון, לידה וגידול ילדים בריאים</span></a>
-                                <h1 class="title_section title-1 sm-splittext">הנחיות לבדיקות דם ושתן בהריון</h1>
+                    <h1 class="title_section title-1 sm-splittext">@Model.PageTitle</h1>
                                 <ul class="jobs_list clear">
                                     <li>ד”ר בנקוביץ ואדים</li>
                                     <li>מנהל מחלקה</li>
                                 </ul>
-                                <div class="article_desc title-5">מהן בדיקות דם ושתן לתחילת הריון? צריך הפניה? עליי לצום? כמה עולות הבדיקות? היכן אוכל להיבדק? צריך להזמין תור? בתוך כמה זמן אקבל תוצאות והיכן אוכל לצפות בהן?</div>
+                    <div class="article_desc title-5">@Model.ArticleDesc</div>
                             </div>
 
                             <div class="left_side">
                                 <div class="inner">
-                                    <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/24.jpg');"></div></div></div>
+                        <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('@Model.TopImage.Url()');"></div></div></div>
                                 </div>
                             </div>
 

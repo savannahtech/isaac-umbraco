@@ -50,12 +50,20 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// TopLeftImage: Select the top left image for this page
+		/// ArticleDesc: Text required.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("topLeftImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops TopLeftImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "topLeftImage");
+		[ImplementPropertyType("articleDesc")]
+		public virtual string ArticleDesc => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetArticleDesc(this, _publishedValueFallback);
+
+		///<summary>
+		/// PageTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("pageTitle")]
+		public virtual string PageTitle => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPageTitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title: רפאל
@@ -64,5 +72,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("title")]
 		public virtual string Title => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopImage: Select top left image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops TopImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopImage(this, _publishedValueFallback);
 	}
 }
