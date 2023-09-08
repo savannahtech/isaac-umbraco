@@ -10,7 +10,7 @@ Before you begin, make sure you have the following prerequisites in place:
 
 - **Usync**: Ensure that Usync version 12.1.0 is integrated into your Umbraco project for easy configuration and synchronization of your Umbraco data.
 
-- **Hosting Environment**: The Umbraco website should be hosted on a server with the necessary server-side technologies (e.g., ASP.NET, SQL Server) installed and configured.
+- **Hosting Environment**: The Umbraco website should be hosted on a server with the necessary server-side technologies (e.g., ASP.NET, SQL Server/SQLite) installed and configured.
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ Before you begin, make sure you have the following prerequisites in place:
 
 You can access the hosted Umbraco website by following the URL below:
 
-[http://gyasinimako-001-site1.htempurl.com](http://gyasinimako-001-site1.htempurl.com)
+http://gyasinimako-001-site1.htempurl.com
 
 ## Accessing the Admin Dashboard
 
