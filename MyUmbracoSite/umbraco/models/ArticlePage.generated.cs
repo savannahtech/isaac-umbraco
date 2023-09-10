@@ -58,12 +58,68 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ArticleDesc => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetArticleDesc(this, _publishedValueFallback);
 
 		///<summary>
+		/// ContactFormImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contactPageImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ContactPageImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetContactPageImage(this, _publishedValueFallback);
+
+		///<summary>
 		/// PageTitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("pageTitle")]
 		public virtual string PageTitle => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPageTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// PostHeaderTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("postHeaderTitle")]
+		public virtual string PostHeaderTitle => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPostHeaderTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// PostImageOne
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("postImageOne")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops PostImageOne => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPostImageOne(this, _publishedValueFallback);
+
+		///<summary>
+		/// PostImageThree
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("postImageThree")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops PostImageThree => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPostImageThree(this, _publishedValueFallback);
+
+		///<summary>
+		/// PostImageTwo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("postImageTwo")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops PostImageTwo => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPostImageTwo(this, _publishedValueFallback);
+
+		///<summary>
+		/// PostTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("postTitle")]
+		public virtual string PostTitle => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetPostTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// ReadMoreButtonText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readMoreButtonText")]
+		public virtual string ReadMoreButtonText => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetReadMoreButtonText(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title: רפאל
@@ -80,5 +136,61 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topImage")]
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops TopImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopRightContentFour
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topRightContentFour")]
+		public virtual string TopRightContentFour => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopRightContentFour(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopRightContentOne
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topRightContentOne")]
+		public virtual string TopRightContentOne => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopRightContentOne(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopRightContentThree
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topRightContentThree")]
+		public virtual string TopRightContentThree => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopRightContentThree(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopRightContentTwo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topRightContentTwo")]
+		public virtual string TopRightContentTwo => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTopRightContentTwo(this, _publishedValueFallback);
+
+		///<summary>
+		/// VideoCoverImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoCoverImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops VideoCoverImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetVideoCoverImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// VideoCoverTextOne
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoCoverTextOne")]
+		public virtual string VideoCoverTextOne => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetVideoCoverTextOne(this, _publishedValueFallback);
+
+		///<summary>
+		/// VideoCoverTextTwo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoCoverTextTwo")]
+		public virtual string VideoCoverTextTwo => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetVideoCoverTextTwo(this, _publishedValueFallback);
 	}
 }

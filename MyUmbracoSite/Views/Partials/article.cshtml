@@ -1,4 +1,4 @@
-@inherits UmbracoViewPage<IHeaderProperties>
+﻿@inherits UmbracoViewPage<IHeaderProperties>
 <!-- Home page -->
             <div class="medicalcenter_page template_container container_padding" id="medicalcenter_page" data-templatename="medical_center">
 
@@ -28,17 +28,17 @@
                             </div>
 
                             <div class="content font_l">
-                                <h3 class="title-5">מהן בדיקות דם ושתן לתחילת הריון?</h3>
-                                <p>בדיקות שגרתיות בהריון כוללות בדיקות דם: ספירת דם, בדיקת סוג הדם ונוגדנים ל־Rh, בדיקת דם לסוכר בצום ובדיקת VDRL (לגילוי עגבת). בנוסף, נעשות בדיקת שתן לכללית ולתרבית. לעיתים תישלחי לבדיקות נוספות לפי שיקול דעת הצוות המטפל, למשל לבדיקת המצב החיסוני לווירוסים מסוימים (כמו CMV, HBV, HIV), תפקודי בלוטת התריס או בדיקות אחרות בהתאם למצבך הרפואי.</p>
-                                <h3 class="title-5">מתי אוכל לעשות את הבדיקות?</h3>
-                                <p>מיד לאחר הביקור הראשון אצל הרופא או האחות ורצוי עד השבוע ה־12 להריון.</p>
+                                <h3 class="title-5">@Model.TopRightContentOne</h3>
+                                <p>@Model.TopRightContentTwo</p>
+                                <h3 class="title-5">@Model.TopRightContentThree</h3>
+                                <p>@Model.TopRightContentFour</p>
                                 <div class="video_box mix_video">
                                     <a href="javascript:;" class="inner play_video" aria-label="נגן סרטון">
-                                        <div class="bg cover" style="background-image: url('media/images/pictures/25.jpg');"></div>
+                                        <div class="bg cover" style="background-image: url('@Model.VideoCoverImage.Url()');"></div>
                                         <div class="play_btn"></div>
                                         <div class="bottom">
-                                            <div class="name font_xl">ד״ר רוגובסקי רותם</div>
-                                            <h4 class="title-2">מידע גם על שאר הבדיקות בהריון</h4>
+                                            <div class="name font_xl">@Model.VideoCoverTextOne</div>
+                                            <h4 class="title-2">@Model.VideoCoverTextTwo</h4>
                                         </div>
                                     </a>
                                     <div class="iframe_cont" data-youtube-id="Bey4XXJAqS8"></div>
@@ -70,12 +70,23 @@
                 <section class="posts_section experts_section" id="posts_section">
                     <div class="innerpage">
                         <div class="row">
-                            <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>אולי יעניין אותך גם</h2>
+                            <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>@Model.PostHeaderTitle</h2>
                             <div class="carousel sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
                                 <div class="item carousel-cell">
                                     <a href="#" class="inner" aria-label="עבור לרופא">
                                         <div class="in">
-                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/10.jpg');"></div></div>
+                                            <div class="bg"><div class="cover" style="background-image: url('@Model.PostImageThree.Url()');"></div></div>
+                                            <div class="bottom">
+                                                <h3 class="title title-5">@Model.PostTitle</h3>
+                                                <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('@Model.PostImageTwo.Url()');"></div></div>
                                             <div class="bottom">
                                                 <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
                                                 <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
@@ -86,18 +97,7 @@
                                 <div class="item carousel-cell">
                                     <a href="#" class="inner" aria-label="עבור לרופא">
                                         <div class="in">
-                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/11.jpg');"></div></div>
-                                            <div class="bottom">
-                                                <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
-                                                <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="item carousel-cell">
-                                    <a href="#" class="inner" aria-label="עבור לרופא">
-                                        <div class="in">
-                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/12.jpg');"></div></div>
+                                            <div class="bg"><div class="cover" style="background-image: url('@Model.PostImageOne.Url()');"></div></div>
                                             <div class="bottom">
                                                 <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
                                                 <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
@@ -106,7 +106,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn btn_outline"><span>לבלוג המלא</span></a></div>
+                            <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn btn_outline"><span>@Model.ReadMoreButtonText</span></a></div>
                         </div>
                     </div>
                 </section>
@@ -115,7 +115,7 @@
                 <section class="lead_section side_section" id="lead_section">
                     <div class="innerpage">
                         <div class="row">
-                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/13.jpg');"></div></div></div>
+                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('@Model.ContactPageImage.Url()');"></div></div></div>
                             <div class="content">
                                 <div class="table">
                                     <div class="table-cell">
