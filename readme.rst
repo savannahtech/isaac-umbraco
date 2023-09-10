@@ -61,4 +61,3 @@ You should now have access to the Umbraco admin dashboard.
 
 - **Admin Password**: 1234567890
 
-Please keep these credentials secure and do not share them with unauthorized individuals.
